@@ -9,16 +9,14 @@ public class T01 {
 
         int a=10;
 
-        while (a<100) {
-            if (a%7==0)
-            System.out.print(a + " ");
+        while(a<100){
+            if (a%7==0){
+                System.out.print(a + " ");
+
+            }
             a++;
-
-
-
-
-
         }
+
 
     }
 }

@@ -9,16 +9,15 @@ public class T05 {
 
         int sayi=5;
         int us=2;
+        usHesapla(sayi, 2);
 
-        usHesapla(sayi,us);
-        usHesapla(5,3);
 
 
     }
-
     public static void usHesapla(int sayi,int us){
-        int sonuc= 1;
-        while (us>0){
+        int sonuc=1;
+
+        while(us>0){
             sonuc*=sayi;
             us--;
 
