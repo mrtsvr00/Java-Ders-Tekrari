@@ -5,21 +5,19 @@ public class T01 {
 
         //Soru 1- ’k’ harfinden ‘t’ harfine kadar harfleri yazdirin.
 
-
-
-
-
         char krk='k';
 
         do {
-            System.out.print(krk);
-
-            krk=(char)(krk+1);
-
+            System.out.print(krk + " ");
+            krk++;
 
 
+        }while(krk<='t');
 
-        }while (krk<'t');
+
+
+
+
 
     }
 }

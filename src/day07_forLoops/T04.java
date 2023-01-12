@@ -6,17 +6,23 @@ public class T04 {
         //dahil olarak aralarindaki tum sayilarin toplamini yazdirin. Bitis degeri
         //baslangic degerinden kucuk olsa da program calissin
 
-        int basDeger=0;
-        int bitDeger=6;
+        int basDeger=4;
+        int bitDeger=3;
         int toplamDeger = 0;
 
-
+        if (basDeger<=bitDeger){
 
             for (int i = basDeger; i <=bitDeger ; i++) {
-                if (basDeger<=bitDeger){
-                toplamDeger+=i;
+                toplamDeger += i;
+            }
                 System.out.print(toplamDeger + " ");
+
+        }else {
+            for (int i = basDeger; i >=bitDeger ; i--) {
+                toplamDeger += i;
             }
-            }
+                System.out.print(toplamDeger + " ");
+
+        }
     }
 }

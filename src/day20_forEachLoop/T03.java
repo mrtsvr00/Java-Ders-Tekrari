@@ -12,20 +12,21 @@ public class T03 {
         //yeni bir listeye ekleyip yazdirin.
 
         String[] cumle={"Java", "ogrenmek" ,"cok" ,"guzel"};
+        
+        List<String>yeniListe=new ArrayList<>();
 
-        List<String> kelimelerBirligi=new ArrayList<>();
-
-        for (String each:cumle
+        for (String eachCumle:cumle
              ) {
-            if (each.length()%2==0) {
-                kelimelerBirligi.add(each.substring(0, each.length() / 2));
-            }else {
-                kelimelerBirligi.add(each.substring(each.length() / 2));
+            if (eachCumle.length()%2==0){
+                yeniListe.add(eachCumle.substring(0,eachCumle.length()/2));
+            }else{
+                yeniListe.add(eachCumle.substring(eachCumle.length()/2));
+            }
 
         }
+        System.out.println(yeniListe);
 
-        }
-        System.out.println(kelimelerBirligi);
+
 
     }
 }

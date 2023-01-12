@@ -1,5 +1,7 @@
 package day13_doWhileLoop;
 
+import java.util.Scanner;
+
 public class T03 {
     public static void main(String[] args) {
 
@@ -7,20 +9,22 @@ public class T03 {
         //        //bulunuz, tamkare ise true değilse false yazdırınız.
         //        //Ornek : input : 16, output: 4
 
-        int sayi=1;
-        int tamKare=49;
+        Scanner scan=new Scanner(System.in);
+        System.out.println("sayi girinoz");
+        int sayi=scan.nextInt();
+        int karekok=1;
         boolean sonuc=true;
 
        do {
-           if (sayi*sayi==tamKare){
-               System.out.println(sayi);
+           if (karekok*karekok==sayi){
                sonuc=true;
                break;
 
            }else
-               sayi++;
+               sonuc=false;
+           karekok++;
 
-       }while(sayi*sayi<=tamKare);
+       }while(karekok*karekok<=sayi);
         System.out.println(sonuc);
 
     }

@@ -8,23 +8,27 @@ public class T02 {
         //Soru 2- Verilen int array’deki her elementin karelerini alip, karelerinin toplamini
         //yazdiran bir method olusturun.
 
-        Integer [] arr={2,3};
-        System.out.println(karelerToplami(arr));
+        Integer[] arr = {2, 3, 1, 3, 2, 2};
 
+        kareleriniDondur(arr);
 
     }
-    public static int karelerToplami(Integer [] arr ){
-
+    public static void kareleriniDondur(Integer[] arr){
         int toplam=0;
-
 
         for (Integer each:arr
              ) {
+
             toplam+=each*each;
 
 
+
         }
-        return toplam;
+        System.out.println(toplam);
+
 
     }
+
+
 }
+

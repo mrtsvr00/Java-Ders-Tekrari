@@ -7,25 +7,23 @@ public class C02 {
     //input : isim : Ali soyisim :YILMAZ. output : Ali Yilmaz
     public static void main(String[] args) {
 
-        String isim="AHMET";
-        String soyisim="KARAHANLI";
+        String isim = "AHMET";
+        String soyisim = "KARAHANLI";
 
-        System.out.println(isimDuzenle(isim, soyisim));
-        System.out.println(isimDuzenle("mehmet","babayigit"));
+        String yeniIsimSoyisim=isimDuzenle(isim, soyisim);
+        System.out.println(yeniIsimSoyisim);
 
 
     }
     public static String isimDuzenle(String isim,String soyisim){
-
-        String yeniIsimSoyisim= isim.substring(0,1).toUpperCase() +
-                                isim.substring(1).toLowerCase() +
-                                " " +
-                                soyisim.toUpperCase();
+        String yeniIsimSoyisim=isim.substring(0, 1).toUpperCase() + isim.substring(1).toLowerCase() + " " +
+                               soyisim.substring(0,1).toUpperCase() + soyisim.substring(1).toLowerCase();
 
 
         return yeniIsimSoyisim;
-    }
 
+
+    }
 
 
 

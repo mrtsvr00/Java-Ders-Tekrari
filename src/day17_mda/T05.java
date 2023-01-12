@@ -12,24 +12,22 @@ public class T05 {
 
         sonElementTopla(arr);
 
-
     }
+        public static void sonElementTopla(int[][] arr) {
 
-    public static void sonElementTopla(int[][] arr) {
+            int toplam = 0;
+            int [] toplamArrayi=arr[0];
 
-        int toplam = 0;
-        int [] toplamArrayi=arr[0];
+            for (int i = 0; i < arr.length; i++) {
 
-        for (int i = 0; i < arr.length; i++) {
-
-            toplam += arr[i][(arr[i].length-1)];
-
+                toplam += arr[i][(arr[i].length-1)];
 
 
 
+
+
+            }
+            System.out.println(toplam);
 
         }
-        System.out.println(toplam);
-
     }
-}

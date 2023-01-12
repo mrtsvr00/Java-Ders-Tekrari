@@ -12,19 +12,12 @@ public class T04 {
         //Kullanici negatif sayi girerse "negatif sayi kullanamazsiniz " yazdirin bu
         //negatif sayiyi sayi adedine ve toplama eklemeyin
 
-        int sayi=1;
-        int sayac=0;
-        int toplam=0;
-        while (sayi!=0){
-            Scanner scan=new Scanner(System.in);
-            System.out.println("lutfen pozitif tamsayilar giriniz\nbitirmek istediginizde 0 a basiniz");
-            sayi=scan.nextInt();
-            toplam+=sayi;
-            sayac++;
+      Scanner scan=new Scanner(System.in);
+      int toplam=0;
+      int sayac=0;
+      int sayi=1;
 
-        }
 
-        System.out.println("kac adet tamsayi girildigi : " + (sayac-1) + "\ngirilen sayilar toplami : " + toplam);
 
 
     }

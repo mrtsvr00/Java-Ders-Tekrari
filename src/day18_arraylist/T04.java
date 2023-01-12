@@ -11,7 +11,7 @@ public class T04 {
 
         List<Integer> tekrarsizListe=new ArrayList<>();
 
-        for (int i = 0; i < arr.length; i++) {
+        for (int i = 0; i <arr.length ; i++) {
 
             if (!tekrarsizListe.contains(arr[i])){
                 tekrarsizListe.add(arr[i]);
@@ -20,14 +20,6 @@ public class T04 {
 
         }
         System.out.println(tekrarsizListe);
-
-        arr=new int[tekrarsizListe.size()];
-
-        for (int i = 0; i < arr.length; i++) {
-            arr[i]= tekrarsizListe.get(i);
-
-        }
-        System.out.println(Arrays.toString(arr));
 
 
     }

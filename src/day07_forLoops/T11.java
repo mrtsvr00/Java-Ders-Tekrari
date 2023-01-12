@@ -22,5 +22,6 @@ public class T11 {
         if (bayrak) System.out.println("Asal sayi degil");
         else System.out.println("Asal sayi");
 
+
     }
 }

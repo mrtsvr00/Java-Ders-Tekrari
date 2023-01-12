@@ -35,5 +35,8 @@ public class T02 {
         }
         System.out.println(Arrays.toString(toplamarArrayi));
 
-    }
-}
+                }
+
+            }
+
+

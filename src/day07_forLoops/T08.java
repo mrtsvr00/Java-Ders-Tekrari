@@ -1,5 +1,7 @@
 package day07_forLoops;
 
+import java.util.Scanner;
+
 public class T08 {
     public static void main(String[] args) {
         //Soru 8 (interview)- Kullanicidan pozitif bir sayi alin, 1’den baslayarak tum
@@ -9,23 +11,35 @@ public class T08 {
         //- hem 3 hem 5 ile bolunebilen bir sayiya gelirse sayi yerine fizzBuzz
         //yazdirin
 
-        int sayi=30;
+        Scanner scan=new Scanner(System.in);
+        System.out.println("sayi giriniz");
+        int sayi=scan.nextInt();
 
-        for (int i = 1; i <=sayi ; i++) {
+        if (sayi<=0) {
+            System.out.println("hatali");
+        }else{
 
-            if (sayi%3==0 && sayi%5==0) {
-                System.out.print("fizzBuzz");
-                break;
-            }else if (sayi%5==0) {
-                System.out.print("buzz ");
-                break;
-            }else if (sayi%3==0){
-                System.out.print("fizz ");
-                break;
-            }else {
-                System.out.print(i + " ");
+            for (int i = 1; i <=sayi ; i++) {
 
-            }
+
+                if (sayi%3==0 && sayi%5==0) {
+                    System.out.println("fizzBuzz");
+                    break;
+                }else if (sayi%3==0) {
+                    System.out.println("fizz");
+                    break;
+                }else if (sayi%5==0) {
+                    System.out.println("buzz");
+                    break;
+                }else{
+                    System.out.print(i + " ");
+                }
+
         }
+
+
+
+        }
+
     }
-}
+        }

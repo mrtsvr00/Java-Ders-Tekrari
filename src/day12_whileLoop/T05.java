@@ -1,5 +1,7 @@
 package day12_whileLoop;
 
+import java.util.Scanner;
+
 public class T05 {
     public static void main(String[] args) {
 
@@ -7,9 +9,14 @@ public class T05 {
         //kullanarak verilen sayinin istenen ussunu hesaplayip yazdiran bir method
         //olusturun.
 
-        int sayi=5;
-        int us=2;
-        usHesapla(sayi, 2);
+      Scanner scan=new Scanner(System.in);
+        System.out.println("ussu hesaplanacak sayi giriniz");
+        int sayi= scan.nextInt();
+        System.out.println("sayinin ussunu giriniz");
+        int us=scan.nextInt();
+
+        usHesapla(sayi, us);
+
 
 
 
@@ -19,10 +26,13 @@ public class T05 {
 
         while(us>0){
             sonuc*=sayi;
+
+
             us--;
 
         }
         System.out.println(sonuc);
+
 
     }
 }

@@ -45,7 +45,5 @@ public class T09 {
         }
 
         System.out.println(fibonacciListesi);
-
-
     }
 }

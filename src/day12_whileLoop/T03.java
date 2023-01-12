@@ -6,22 +6,21 @@ public class T03 {
         //donduren bir method olusturun.
 
         String str="Java candir";
-        String tersStr=stringiCevir(str);
-        System.out.println(tersStr);
+
+
+        System.out.println(terseCevir(str));
 
 
     }
-
-    public static String stringiCevir(String str){
-        String tersstr="";
+    public static String terseCevir(String str){
         int index=str.length()-1;
-        while (index>=0){
-            tersstr+=str.substring(index,index+1);
+        String tersStr="";
+
+        while(index>=0){
+            tersStr+= str.charAt(index);
+
             index--;
         }
-        return tersstr;
-
-
-
+      return tersStr;
     }
 }

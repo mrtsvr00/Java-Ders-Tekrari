@@ -10,12 +10,15 @@ public class T06 {
 
         int sayi=6;
         int faktoriyel=1;
+        System.out.print(sayi+ "! = ");
 
-        for (int i = sayi; i >1; i--) {
+        for (int i = sayi; i >=1; i--) {
             faktoriyel*=i;
-            System.out.print(faktoriyel + " ");
+
+            System.out.print(i + " * ");
 
         }
+        System.out.println( " = " + faktoriyel);
 
 
     }

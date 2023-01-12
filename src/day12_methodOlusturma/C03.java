@@ -8,27 +8,28 @@ public class C03 {
 
     public static void main(String[] args) {
         int sayi=55;
-        System.out.println(asalSayimi(sayi));
-        System.out.println(asalSayimi(65));
+
+        asalSayimi(sayi);
+
+
 
 
     }
+    public static void asalSayimi(int sayi){
+        String sonuc="asal";
 
-    public static String asalSayimi(int sayi){
-        String sonuc="";
-        for (int i = 2; i <= sayi-1 ; i++) {
+        for (int i = 2; i < sayi ; i++) {
 
-            if (sayi%i==0) {
-                sonuc = "Asal degil";
+            if (sayi%i==0){
+                sonuc="asal degil";
                 break;
+
             }
 
         }
-        if (!sonuc.equals("Asal degil")) {
-            System.out.println("Asal sayi");
+        if (sonuc!="asal degil") System.out.println("asal");
+        else System.out.println("asal degil");
         }
 
-
-        return sonuc;
     }
-}
+

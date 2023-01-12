@@ -8,19 +8,22 @@ public class T04 {
         String cumle="Java ogrenmek cok guzel";
         String harf="e";
 
-        String [] cumleArr=cumle.split("");
+        String []cumleArr=cumle.split("");
         int sayac=0;
 
         for (String each:cumleArr
              ) {
-            if (each.contains(harf)){
+            if (each.equals("e")){
                 sayac++;
+
+
             }
 
-
-
         }
-        System.out.println("harf " + sayac + " kere kullanilmis");
+        if (sayac==0) System.out.println("harf cumlede kullanilmamis");
+        else System.out.println(sayac + " kere kullanilmis");
+
+
 
     }
 }

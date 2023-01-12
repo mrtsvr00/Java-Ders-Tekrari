@@ -12,9 +12,11 @@ public class T01 {
         while(a<100){
             if (a%7==0){
                 System.out.print(a + " ");
-
             }
             a++;
+
+
+
         }
 
 

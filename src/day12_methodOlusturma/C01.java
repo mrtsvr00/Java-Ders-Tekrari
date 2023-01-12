@@ -13,13 +13,12 @@ public class C01 {
 
 
     public static void main(String[] args) {
-        String input = "Java ne kadar guzel";
+        String str = "cemito cemito";
         int basIndexi=5;
-        int bitIndexi=7;
+        int bitIndexi=9;
 
-
-      stringYazdir(input,2,3);
-      stringYazdir(input,5,9);
+        stringYazdir(str,2,3);
+        stringYazdir(str,5,9);
 
     }
 
@@ -34,8 +33,12 @@ public class C01 {
             }
         System.out.print("");
 
+
     }
 
 
-}
+    }
+
+
+
 

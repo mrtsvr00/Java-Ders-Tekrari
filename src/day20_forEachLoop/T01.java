@@ -1,7 +1,6 @@
 package day20_forEachLoop;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
 public class T01 {
     public static void main(String[] args) {
@@ -10,16 +9,26 @@ public class T01 {
 
         Integer [] arr={2,3,4,6,3,4,6,1,8,5,4};
 
-        List<Integer> tekrarsizElementler=new ArrayList<>();
+        List<Integer>tekrarsizListe=new ArrayList<>();
 
-        for (Integer each:arr
-             ) {
-            if (!tekrarsizElementler.contains(each)){
-                tekrarsizElementler.add(each);
+        for (int i = 0; i < arr.length; i++) {
+
+            if (!tekrarsizListe.contains(arr[i])){
+                tekrarsizListe.add(arr[i]);
             }
 
         }
-        System.out.println(tekrarsizElementler);
+
+        Collections.sort(tekrarsizListe);
+
+
+        Integer []yeniArray=tekrarsizListe.toArray(new Integer[0]);
+        //Object []yeniArray=tekrarsizListe.toArray();
+
+        System.out.println(Arrays.toString(yeniArray));
+
+
+
 
 
     }

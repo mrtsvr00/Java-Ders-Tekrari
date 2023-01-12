@@ -11,35 +11,31 @@ public class T06 {
         //Soru 6- Kullanicidan pozitif bir tamsayi alip, o tamsayiyi tam bolebilen tum pozitif
         //tamsayilari bir liste olarak bize donduren bir method olusturun.
 
-        Scanner scan=new Scanner(System.in);
-        System.out.println("Lutfen tam bolenlerini gormek istediginiz sayiyi giriniz");
-        int girilenSayi=scan.nextInt();
-
-
-        if (girilenSayi<0) System.out.println("Gecersiz giris");
-        else {
-            List<Integer>tamBolenlerListesi=pozitifTamBolenDondur(girilenSayi);
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Tam bolenlerini listelemek icin pozitif bir tam sayi girin");
+        int sayi = scan.nextInt();
+        if (sayi<=0){
+            System.out.println("Gecersiz sayi");
+        }else {
+            List<Integer> tamBolenlerListesi = tamBolenlerListesiOlustur(sayi);
             System.out.println(tamBolenlerListesi);
+
         }
-
-
     }
-    public static List<Integer>pozitifTamBolenDondur(int girilenSayi){
+    public static List<Integer> tamBolenlerListesiOlustur(int sayi){
 
+        List<Integer> tamBolenlerListesi = new ArrayList<>();
 
-        List<Integer>tamBolenlerListesi=new ArrayList<>();
+        for (int i = 1; i <= sayi; i++) {
 
-        for (int i = 1; i <=girilenSayi ; i++) {
-
-            if (girilenSayi%i==0){
+            if (sayi % i == 0) {
                 tamBolenlerListesi.add(i);
 
             }
 
-
-
         }
         return tamBolenlerListesi;
-
     }
+
 }
+
